@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background-color: var(--background-primary);
+  font-size: 12px;
+  row-gap: 6px;
+  min-height: 80vh;
+}
+
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding: 3rem;
+  background-color: var(--background-secondary);
+  font-size: 12px;
+  row-gap: 6px;
+  border-radius: 12px;
+  width: 30vw;
+}
+
+.heading {
+  font-size: 30px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 12px;
+}
+
+.input {
+  line-height: 32px;
+  padding: 0 6px;
+  background-color: var(--background-main);
+  border: none;
+  border-radius: 8px;
+  color: var(--font-color-primary);
+}

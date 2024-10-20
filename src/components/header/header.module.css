@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 4rem;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.getStarted {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: var(--background-tertiary);
+    &:hover {
+        background-color: var(--btn-hovered);
+    }
+}
+
+.itemContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    list-style: none;
+    padding: 1rem 3rem;
+
+    .item {
+        cursor: pointer;
+
+        &:hover {
+            color: var(--color-vivid);
+        }
+    }
+}

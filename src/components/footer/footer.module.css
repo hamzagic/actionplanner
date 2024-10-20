@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background-color: var(--background-secondary);
+  font-size: 12px;
+  row-gap: 6px;
+}
+
+.listContainer {
+  margin-top: 6px;
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    list-style: none;
+    .anchor:hover {
+      color: var(--anchor-hovered);
+    }
+  }
+}

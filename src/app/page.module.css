@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  min-height: 63vh;
+}
+
+.left {
+  .heading {
+    font-size: 48px;
+    width: 60%;
+  }
+}
+
+.right {
+  .image {
+    border-radius: 8px;
+  }
+}
+
+.btnContainer {
+  margin-top: 20px;
+}
+
+.subcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background-color: var(--background-secondary);
+  row-gap: 6px;
+  .loginContainer {
+    .login {
+      font-weight: 600;
+      color: var(--color-vivid);
+      margin-left: 8px;
+    }
+  }
+}
