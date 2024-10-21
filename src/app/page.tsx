@@ -3,9 +3,11 @@ import Button from '@/components/button/Button';
 import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '@/components/layout';
+import StoreProvider from '@/store/StoreProvider';
 
 export default function Home() {
     return (
+      <StoreProvider>
         <Layout>
             <div className={styles.container}>
                 <div className={styles.left}>
@@ -41,5 +43,6 @@ export default function Home() {
                 </div>
             </div>
         </Layout>
+      </StoreProvider>
     );
 }

@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Friend Finder",
-  description: "Find friends based on your interests",
+  title: "Action Planner",
+  description: "Turn your goals into actionable, step-by-step plans",
 };
 
 export default function RootLayout({

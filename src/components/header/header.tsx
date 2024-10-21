@@ -1,10 +1,12 @@
 "use client";
-import Link from "next/link";
-import styles from "./header.module.css";
+import { useContext } from 'react';
+import Link from 'next/link';
+import styles from './header.module.css';
+import StoreContext from '@/store/StoreContext';
 
-function Header(data: any) {
-  const storeData = data.data;
-  console.log(storeData);
+function Header() {
+  const { user } = useContext(StoreContext);
+  console.log(user);
   const clickHandler = () => {
     window.location.href = "/";
   };
@@ -14,7 +16,7 @@ function Header(data: any) {
       <div className={styles.logo} onClick={clickHandler}>
         Action Planner
       </div>
-      {storeData.isLoggedIn && !isLandingPage && (
+      {user.isLoggedIn && !isLandingPage && (
         <ul className={styles.itemContainer}>
           <li className={styles.item}>
             <Link href="/home">Home</Link>
