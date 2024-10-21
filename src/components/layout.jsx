@@ -1,26 +1,11 @@
 'use client';
-import { cloneElement } from 'react';
 import Header from './header/header';
 import Footer from './footer/footer';
 
-// async function getData() {
-//   const data = {
-//     isLoggedIn: true,
-//     isLandingPage: false
-//   }
-
-//   return data;
-// }
-
-const Layout = async ({ children }) => {
-  // const data = await getData();
-  const data = {
-    isLoggedIn: true,
-  }
-
+const Layout = ({ children }) => {
   return (
     <>
-      <Header data={data} />
+      <Header />
       <main>{children}</main>
       <Footer />
     </>

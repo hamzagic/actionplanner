@@ -6,7 +6,11 @@ const MyPlans = () => {
   return (
     <Layout>
       <div className={styles.container}>
-        List of Plans with access to plan details
+        <div>Current Plans</div>
+        <ul>
+          <li>Create a YouTube Channel</li>
+          <li>Build an Arduino Midi Controller</li>
+        </ul>
       </div>
     </Layout>
   );

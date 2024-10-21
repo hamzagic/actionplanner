@@ -1,7 +1,7 @@
 'use client';
 import Layout from '@/components/layout';
 
-const Home = () => {
+const Dashboard = () => {
 
   return (
     <Layout>
@@ -10,4 +10,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Dashboard;
