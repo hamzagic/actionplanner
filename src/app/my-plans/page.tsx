@@ -1,8 +1,8 @@
 "use client";
 import Layout from "@/components/layout";
 import styles from "./page.module.css";
-import PlanList from "@/components/plans/plan-list/planList";
 import { Plan } from "@/components/plans/PlanTypes";
+import PlanList from "@/components/plans/plan-list/PlanList";
 
 const plans = [
   {
@@ -64,6 +64,30 @@ const plans = [
         ]
       }
     ],
+  },
+  {
+    id: 2,
+    title: 'Sell Stock Music',
+    steps: [
+      {
+        order: 1,
+        title: 'Understand the Stock Music Market',
+        items: [
+          {
+            order: 1,
+            text: 'What is Stock Music? It\'s royalty-free music that creators can purchase and use without paying recurring fees.'
+          },
+          {
+            order: 2,
+            text: 'Who Buys Stock Music? Filmmakers, advertisers, content creators, and businesses looking for affordable music for their projects.'
+          },
+          {
+            order: 3,
+            text: 'Market Demand: Popular genres include corporate, cinematic, ambient, electronic, and acoustic tracks that are versatile and widely applicable.'
+          }
+        ]
+      },
+    ]
   }
 ];
 
@@ -71,7 +95,6 @@ const MyPlans = () => {
   return (
     <Layout>
       <div className={styles.container}>
-        <h3 className={styles.plans}>Current Plans</h3>
         <PlanList plans={plans as Plan[]}/>
       </div>
     </Layout>

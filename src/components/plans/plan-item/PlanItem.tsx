@@ -1,10 +1,9 @@
 import { Plan } from '../PlanTypes';
 import styles from './PlanItem.module.css';
 
-const PlanItem = ({ plans }: { plans: Plan[] }) => {
+const PlanItem = ({ plan }: { plan: Plan }) => {
   return(
     <div>
-      {plans.length > 0 && plans.map(plan =>
       <div className={styles.plan} key={plan.id}>
         <div className={styles.planTitle}>{plan.title}</div>
         {plan.steps.length > 0 && plan.steps.map(step =>
@@ -22,7 +21,6 @@ const PlanItem = ({ plans }: { plans: Plan[] }) => {
           </div>
         )}
       </div>
-    )}
     </div>
   );
 }
