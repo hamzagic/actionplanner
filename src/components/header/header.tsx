@@ -19,7 +19,7 @@ function Header() {
       {user.isLoggedIn && !isLandingPage && (
         <ul className={styles.itemContainer}>
           <li className={styles.item}>
-            <Link href="/home">Home</Link>
+            <Link href="/dashboard">Home</Link>
           </li>
           <li className={styles.item}>
             <Link href="/profile">Profile</Link>
