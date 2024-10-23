@@ -30,7 +30,7 @@ const plans = [
       {
         order: 2,
         title: 'Create a YouTube Account',
-        steps: [
+        items: [
           {
             order: 1,
             text: 'Sign in to YouTube using your Google account.'
@@ -48,7 +48,7 @@ const plans = [
       {
         order: 3,
         title: 'Plan Your Content Strategy',
-        steps: [
+        items: [
           {
             order: 1,
             text: 'Choose Video Formats: Will you make tutorials, reviews, daily vlogs, Q&As, or something else?'
@@ -84,6 +84,24 @@ const plans = [
           {
             order: 3,
             text: 'Market Demand: Popular genres include corporate, cinematic, ambient, electronic, and acoustic tracks that are versatile and widely applicable.'
+          }
+        ]
+      },
+      {
+        order: 2,
+        title: 'Prepare Your Music',
+        items: [
+          {
+            order: 1,
+            text: 'High-Quality Recordings: Ensure your tracks are professionally recorded, mixed, and mastered.'
+          },
+          {
+            order: 2,
+            text: 'Multiple Versions: Create different versions of your tracks (full-length, loops, short edits, instrumental versions) to increase their usability.'
+          },
+          {
+            order: 3,
+            text: 'Genre and Mood Focused: Produce music that fits common genres and moods sought after in the stock music market.'
           }
         ]
       },
